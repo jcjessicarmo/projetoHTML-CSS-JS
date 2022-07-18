@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway:wght@300;600;700;800&family=Special+Elite&display=swap');
+
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+#menu-horizontal {
+    background-color: #CFD2EB;
+}
+
+#menu-horizontal ul {
+    margin-left: 3rem;
+    margin-right: 6rem;
+}
+
+#menu-horizontal ul li {
+    display: inline;
+}
+
+#menu-horizontal ul li a {
+    color: #9e60b9;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#menu-horizontal ul li a:hover {
+    background-color: #1E0B26;
+}
+
+#menu-horizontal ul li:last-child a {
+    float: right;
+    background-color: #1E0B26;
+}
+
+.home {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    background-color: #CFD2EB;
+    color: #1E0B26;
+    display: flex;
+}
+
+.home-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    align-items: center;
+}
+
+.home-image {
+    display: inline-block;
+}
+
+.home-paragraph{
+    font-size: 2rem;
+}
+
+.about-me {
+    font-family: 'Raleway', sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    background-color: #1E0B26;
+    color: #CFD2EB;
+}
+
+.divider{
+    height: 40px;
+}
+
+.about-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    align-items: center;
+}
+
+.about-paragraph{
+    font-size: 1.3rem;
+}
+
+.card-block {
+    min-width: 300px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-gap: 30px;
+}
+
+.cards {
+    max-width: 420px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards-text {
+    max-width: 70%;
+    margin: 5px; 
+}
+
+.contacts {
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    background-color: #1E0B26;
+    color: #CFD2EB;
+    display: flex;
+}
+
+.contact-image{
+    display: inline-block;
+}
+
+.contact-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    align-items: center;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 25rem;
+}
+
+.label{
+    margin-top: 1rem;
+}
+
+.submit {
+    background-color: #CFD2EB;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: #1E0B26;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+.title-forms {
+    align-items: flex-start;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 450px){
+
+    main {
+        width: 100vw;
+    }
+    #menu-horizontal ul {
+        margin-left: 1rem;
+        margin-right: 3rem;
+    }
+    #menu-horizontal ul li a {
+        padding: 10px;
+    }
+
+    img {
+        display: none;
+        visibility: hidden;
+    }
+
+}
+
+@media only screen and (min-width: 449px) and (max-width: 899px) {
+
+    #menu-horizontal ul {
+        margin-left: 0rem;
+        margin-right: 3rem;
+    }
+    #menu-horizontal ul li a {
+        padding: 3px;
+        font-size: 1.0rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    img {
+        display: none;
+        visibility: hidden;
+    }
+
+}

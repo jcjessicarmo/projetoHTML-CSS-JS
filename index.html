@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto HTML, CSS & JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<main>
+
+    <body>
+        <nav id="menu-horizontal">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="#about-me">ABOUT ME</a>
+                </li>
+
+                <li>
+                    <a href="#talk-to-me">CONTACTS</a>
+                </li>
+
+                <li>
+                    <a href="login">LOGIN</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="home">
+            <div class="left-column">
+                <h1 class="home-title">Hello, <br> I'm Jéssica Carmo</h1>
+                <div class="divider"></div>
+                <p class="home-paragraph">Junior IT Engineering Analyst. Passionate about music, photography,
+                    technology,
+                    travel and sweets.</p>
+            </div>
+            <picture class="home-image">
+                <img src="images/imagem01.png" alt="imagem ilustrativa mulher com notebook">
+            </picture>
+        </div>
+
+        <div id="about-me" class="about-me">
+            <h2 class="about-title">About me</h2>
+            <p class="about-paragraph">Pleasure! my name is Jéssica Carmo I'm 23 years old I'm a Jr Software Engineering
+                Analyst at @Itaú-Unibanco.</p>
+            <p class="about-paragraph">Former student of the N3 class of the {reprograma} BackEnd and FrontEnd bootcamp
+                by
+                Mastertech held at the Hack from Facebook && Computer Station for Business at Fatec Mauá.</p>
+            <!-- <div class="divider"></div> -->
+            <p class="about-paragraph">Developing professional, social, emotional, technological skills and becoming a
+                better human being is what I seek every day.</p>
+            <!-- <div class="divider"></div> -->
+            <p class="about-paragraph">Creative, organized, communicative always looking for new challenges and
+                experience.</p>
+            <p class="about-paragraph">Developing myself every day! A little bit at a time and for that it is necessary
+                to be resilient, consistent and never give up, because it takes time to get the expected result.</p>
+            <!-- <div class="divider"></div> -->
+        </div>
+
+        <div class="card-block">
+            <div class="cards">
+                <img src="images/icone-piano.png" alt="icone teclas do piano">
+                <div class="cards-text">
+                    <h3>Music</h3>
+                    <p>Organ, guitar, recorder, piano...</p>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="images/icone-camera.png" alt="icone câmera fotografica">
+                <div class="cards-text">
+                    <h3>Photography</h3>
+                    <p>Photographing nature with people, families...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts">
+            <form name="contacts-form">
+                <h2 id="talk-to-me" class="contact-title">Talk to me</h2>
+
+                <div>
+                    <div class="label">
+                        <label for="name">Name:</label>
+                    </div>
+                    <input type="text" id="nomeid" placeholder="Name" required="required" name="name" />
+                </div>
+
+                <div>
+                    <div class="label">
+                        <label for="phone">Telephone:</label>
+                    </div>
+                    <input type="tel" id="foneid" placeholder="(xx) xxxx-xxxx" name="phone" />
+                </div>
+
+                <div>
+                    <div class="label">
+                        <label for="email">E-mail:</label>
+                    </div>
+                    <input type="email" id="emailid" placeholder="example@mail.com" name="email" />
+                </div>
+
+                <div>
+                    <div class="label">
+                        <label for="message">Message:</label>
+                    </div>
+                    <textarea placeholder="Type your message here"></textarea>
+                </div>
+
+                <input type="submit" class="submit" onclick="Enviar();" value="Submit" />
+            </form>
+
+            <picture class="contact-image">
+                <img src="images/imagem02.png" alt="imagem ilustrativa de um celular">
+            </picture>
+        </div>
+    </body>
+</main>
+
+</html>
