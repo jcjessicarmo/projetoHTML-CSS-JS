@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway:wght@300;600;700;800&family=Special+Elite&display=swap');
+
+* {
+    background-color: #CFD2EB;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #1E0B26;
+}
+
+.btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1E0B26;
+    border-radius: 0.6em;
+    color: #1E0B26;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 1.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 15rem;
+  }
+  .btn:hover, .btn:focus {
+    color: #ffffff;
+    outline: 0;
+  }
+
+  .btn-decoration {
+    text-decoration: none;
+  }
+  
+  .first {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .first:hover {
+    box-shadow: 0 0 40px 40px #1E0B26 inset;
+  }
+ 
+@media only screen and (min-width: 414px) and (max-width: 896px) {
+
+  .title{
+
+    padding-left: 30px;
+    color: #1E0B26;
+  }
+}
